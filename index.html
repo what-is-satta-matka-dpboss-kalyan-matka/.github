@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalyan Matka Play | Satta Matka Agency</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #d4af37;
+            --secondary-color: #1a1a1a;
+            --accent-color: #c62828;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .navbar {
+            background-color: var(--secondary-color);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color) !important;
+            font-size: 1.8rem;
+        }
+        
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .hero-section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn-gold {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            font-weight: 600;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+        
+        .btn-gold:hover {
+            background-color: #e6c762;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-weight: 700;
+            color: var(--secondary-color);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .feature-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            height: 100%;
+            text-align: center;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .results-section {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .results-table {
+            background: white;
+            color: var(--secondary-color);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .results-table thead {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+        
+        .results-table th {
+            font-weight: 600;
+        }
+        
+        .highlight {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 15px;
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            font-size: 5rem;
+            color: rgba(212, 175, 55, 0.1);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            line-height: 1;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 15px;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-links h4 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            margin-top: 30px;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kalyan Matka Play</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#results">Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <h1>Kalyan Matka Play Agency</h1>
+            <p>The most trusted and reliable Satta Matka platform with 15+ years of experience. Get accurate results, expert tips, and premium services to enhance your Matka experience.</p>
+            <a href="#contact" class="btn btn-gold">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="section-title">
+                <h2>Why Choose Us</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Accurate Results</h3>
+                        <p>We provide 100% accurate and timely results for all Kalyan Matka markets. Our results are verified by multiple sources before publishing.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Safe & Secure</h3>
+                        <p>Your privacy and security are our top priorities. We use advanced encryption to protect all transactions and personal information.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Our dedicated support team is available round the clock to assist you with any queries or issues you may have.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section py-5" id="results">
+        <div class="container py-5">
+            <div class="section-title">
+                <h2 style="color: var(--primary-color)">Today's Results</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="results-table">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Market</th>
+                                    <th>Open</th>
+                                    <th>Close</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Kalyan Morning</td>
+                                    <td class="highlight">128</td>
+                                    <td class="highlight">356</td>
+                                    <td>25-07-2023</td>
+                                </tr>
+                                <tr>
+                                    <td>Kalyan Day</td>
+                                    <td class="highlight">247</td>
+                                    <td class="highlight">569</td>
+                                    <td>25-07-2023</td>
+                                </tr>
+                                <tr>
+                                    <td>Kalyan Night</td>
+                                    <td class="highlight">Pending</td>
+                                    <td class="highlight">Pending</td>
+                                    <td>25-07-2023</td>
+                                </tr>
+                                <tr>
+                                    <td>Main Mumbai</td>
+                                    <td class="highlight">389</td>
+                                    <td class="highlight">672</td>
+                                    <td>25-07-2023</td>
+                                </tr>
+                                <tr>
+                                    <td>Rajdhani Night</td>
+                                    <td class="highlight">Pending</td>
+                                    <td class="highlight">Pending</td>
+                                    <td>25-07-2023</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center mt-4">
+                        <p>For complete results and charts, please contact our support team</p>
+                        <a href="#contact" class="btn btn-gold">Get Full Results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5" id="about">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-start">
+                        <h2>About Our Agency</h2>
+                    </div>
+                    <p>Kalyan Matka Play is a premier Satta Matka agency with a legacy of trust and reliability spanning over 15 years. We specialize in providing accurate results, expert tips, and premium services to Matka enthusiasts worldwide.</p>
+                    <p>Our team consists of experienced professionals who have in-depth knowledge of the Matka industry. We understand the nuances of the game and provide valuable insights to help our clients make informed decisions.</p>
+                    <p>What sets us apart is our commitment to transparency, integrity, and customer satisfaction. We maintain the highest standards of service and ensure that all our clients receive personalized attention and support.</p>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-gold me-3">Join Now</a>
+                        <a href="#testimonials" class="btn btn-outline-dark">See Testimonials</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="About Kalyan Matka Play" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light" id="testimonials">
+        <div class="container py-5">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <p>I've been playing Matka for 8 years and Kalyan Matka Play is by far the most reliable platform I've used. Their results are always accurate and their tips have helped me win consistently.</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajesh K.">
+                            <div>
+                                <h5 class="mb-0">Rajesh K.</h5>
+                                <small>Mumbai</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <p>The customer support is exceptional. They guided me through the entire process when I was new to Matka. Now I'm a regular player and very satisfied with their services.</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya S.">
+                            <div>
+                                <h5 class="mb-0">Priya S.</h5>
+                                <small>Delhi</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <p>What I appreciate most is their transparency. They never make false promises and always deliver what they commit. Highly recommended for serious Matka players.</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Vikram J.">
+                            <div>
+                                <h5 class="mb-0">Vikram J.</h5>
+                                <small>Bangalore</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5" id="contact">
+        <div class="container py-5">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Get In Touch</h4>
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div>
+                                <h5>Address</h5>
+                                <p>123 Matka Plaza, Kalyan West, Mumbai, Maharashtra 421301</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="fas fa-phone-alt contact-icon"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+91 98765 43210</p>
+                                <p>+91 98765 43211</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p>info@kalyanmatkaplay.com</p>
+                                <p>support@kalyanmatkaplay.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <div>
+                                <h5>Working Hours</h5>
+                                <p>Monday - Sunday: 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h4 class="mb-4">Send Us a Message</h4>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="email" class="form-control" placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-gold">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h4 class="text-white mb-4">Kalyan Matka Play</h4>
+                    <p>The most trusted and reliable Satta Matka platform with 15+ years of experience in the industry.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#results">Results</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4>Markets</h4>
+                    <ul>
+                        <li><a href="#">Kalyan Morning</a></li>
+                        <li><a href="#">Kalyan Day</a></li>
+                        <li><a href="#">Kalyan Night</a></li>
+                        <li><a href="#">Main Mumbai</a></li>
+                        <li><a href="#">Rajdhani Night</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get daily results and tips directly to your inbox.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Kalyan Matka Play. All Rights Reserved. | Disclaimer: This website is for entertainment purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Add shadow to navbar on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
